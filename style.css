@@ -18,9 +18,7 @@ body {
   background-color: #fff;
 }
 
-
-
-.logo{
+.logo {
   padding: 10px 12px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
@@ -80,18 +78,18 @@ body {
 }
 
 .social {
-    list-style-type: none;
-    display: flex;
-    margin-top: 14px;
-    width: 170.17px;
-    height: 20px;
-  }
+  list-style-type: none;
+  display: flex;
+  margin-top: 14px;
+  width: 170.17px;
+  height: 20px;
+}
 
-  .social_nav {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
+.social_nav {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
