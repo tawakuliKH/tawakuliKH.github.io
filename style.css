@@ -18,11 +18,10 @@ body {
   background-color: #fff;
 }
 
-.mylogo {
-  padding: 10px 12px;
-}
 
-.mylogo a {
+
+.logo{
+  padding: 10px 12px;
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
@@ -81,10 +80,18 @@ body {
 }
 
 .social {
-  height: 20px;
-  width: 170px;
-  margin-top: 10px;
-  display: flex;
-  justify-content: space-between;
-  top: 470px;
-}
+    list-style-type: none;
+    display: flex;
+    margin-top: 14px;
+    width: 170.17px;
+    height: 20px;
+  }
+
+  .social_nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
