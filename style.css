@@ -9,6 +9,7 @@
 
 body {
   min-height: 100vh;
+  background-color: #e5e5e5;
 }
 
 .header {
@@ -45,9 +46,9 @@ body {
   width: 100%;
   background-size: cover;
   background-repeat: no-repeat;
-  border-bottom-left-radius: 13%;
   padding: 114px 24px;
   flex-direction: column;
+  background-color: #fff;
 }
 
 .intro {
@@ -92,4 +93,225 @@ body {
   list-style-type: none;
   margin: 0;
   padding: 0;
+}
+
+.works {
+  display: flex;
+  background-color: #fff;
+  padding: 16px;
+  flex-direction: column;
+}
+
+.snapshot-portofolio {
+  width: 290px;
+  height: 220px;
+  background-image: url('assets/Snapshoot\ Portfolio.png');
+  align-items: flex-start;
+}
+
+.snapshot-portofolio-2 {
+  width: 290px;
+  height: 220px;
+  background-image: url('assets/Snapshoot\ Portfolio-2.png');
+}
+
+.snapshot-portofolio-3 {
+  width: 290px;
+  height: 220px;
+  background-image: url('assets/Snapshoot\ Portfolio-3.png');
+}
+
+.snapshot-portofolio-4 {
+  width: 290px;
+  height: 220px;
+  background-image: url('assets/Snapshoot\ Portfolio-4.png');
+}
+
+.tonic {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172b4d;
+  width: 295px;
+  height: 36px;
+}
+
+.name {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #344563;
+  width: 55px;
+  height: 16px;
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+}
+
+.skills {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 16px;
+  color: #7a869a;
+}
+
+.techs {
+  display: flex;
+}
+
+.tag {
+  padding: 4px 12px;
+  background: #ebebff;
+  border-radius: 8px;
+  margin-right: 10px;
+}
+
+.tag a {
+  width: 21px;
+  height: 16px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  text-decoration: none;
+}
+
+.action {
+  flex: none;
+  height: 72px;
+  width: 100vh;
+  align-items: center;
+}
+
+.btn {
+  display: flex;
+  width: 124px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  top: calc (50% - 48px/2);
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+}
+
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  background-color: #fff;
+  padding: 16px;
+}
+
+.top {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+}
+
+.myself {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+}
+
+.desc {
+  font-family: 'Poppins', sans-serif;
+  flex-wrap: wrap;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  flex: none;
+  width: 100%;
+  color: #344563;
+}
+
+.btn-resume {
+  display: flex;
+  width: 162px;
+  height: 48px;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  top: calc (50% - 48px/2);
+  margin-top: 20px;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.btn-resume a {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #396df2;
+  text-decoration: none;
+}
+
+.main-nav {
+  display: flex;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.first {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.langueges {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  color: black;
+  text-decoration: none;
+}
+
+.btn-resume:hover {
+  background-color: thistle;
+}
+
+.btn:hover {
+  background-color: thistle;
 }
