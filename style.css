@@ -106,11 +106,9 @@ header {
   align-items: center;
   padding: 114px 24px;
   gap: 88px;
-
   position: absolute;
   width: 375px;
   height: 2788px;
-  left: 0px;
   top: 718px;
 }
 
@@ -123,8 +121,8 @@ header {
   gap: 12px;
   width: 327px;
   height: 552px;
-  background: #FFFFFF;
-  border: 1px solid #DFE1E6;
+  background: #fff;
+  border: 1px solid #dfe1e6;
   border-radius: 16px;
   flex: none;
   flex-grow: 0;
@@ -143,7 +141,6 @@ header {
 .snapshot-2 {
   width: 295px;
   height: 220px;
-  background: url(blog_drbl_4x.png);
   border-radius: 8px;
   flex: none;
   flex-grow: 0;
@@ -153,7 +150,6 @@ header {
 .snapshot-3 {
   width: 295px;
   height: 220px;
-  background: url(blog_drbl_4x.png);
   border-radius: 8px;
   flex: none;
   flex-grow: 0;
@@ -174,19 +170,17 @@ header {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 0px;
   width: 295px;
   flex: none;
-  flex-grow: 0;
 }
 
 .title {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
   flex-grow: 0;
 }
 
@@ -194,7 +188,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 12px;
   width: 236px;
   height: 32px;
@@ -206,18 +199,17 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px;
   width: 55px;
   height: 32px;
   flex: none;
   flex-grow: 0;
-
 }
 
 .name {
   width: 55px;
   height: 16px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
@@ -230,9 +222,8 @@ header {
 .counter {
   width: 8px;
   height: 8px;
-  background: #C1C7D0;
+  background: #c1c7d0;
   flex: none;
-  flex-grow: 0;
   border-radius: 100%;
 }
 
@@ -240,21 +231,19 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 8px 0px;
+  padding: 8px;
   width: 88px;
   height: 32px;
   flex: none;
-
-  flex-grow: 0;
 }
 
 .text {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 13px;
   line-height: 16px;
-  color: #7A869A;
+  color: #7a869a;
   flex: none;
   flex-grow: 0;
 }
@@ -262,7 +251,7 @@ header {
 .desc {
   width: 295px;
   height: 76px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 15px;
@@ -276,7 +265,6 @@ header {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 8px;
   width: 203px;
   height: 24px;
@@ -290,7 +278,7 @@ header {
   align-items: center;
   padding: 4px 12px;
   height: 24px;
-  background: #EBEBFF;
+  background: #ebebff;
   border-radius: 8px;
   flex: none;
   flex-grow: 0;
@@ -299,7 +287,7 @@ header {
 
 .tag a {
   text-decoration: none;
-  color: #6070FF;
+  color: #6070ff;
 }
 
 .action {
@@ -315,8 +303,7 @@ header {
   gap: 10px;
   width: 124px;
   height: 48px;
-  left: 0px;
-  top: calc(50% - 48px/2);
+  top: calc (50% - 48px/2);
   border: 1px solid #6070ff;
   border-radius: 8px;
 }
@@ -324,7 +311,7 @@ header {
 .see {
   width: 100px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -342,13 +329,12 @@ header {
   background-color: #fff;
   width: 375px;
   border-top-right-radius: 70px;
-
 }
 
 .myself {
   width: 327px;
   height: 101px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
@@ -364,7 +350,7 @@ header {
 .conent {
   width: 327px;
   height: 144px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -389,7 +375,7 @@ header {
 .resume {
   width: 138px;
   height: 24px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
@@ -400,17 +386,16 @@ header {
   color: #396df2;
 }
 
-
 .skills {
   display: flex;
   align-items: center;
 }
+
 .main-nav {
   display: -webkit-flex;
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  
 }
 
 .first {
@@ -421,17 +406,13 @@ header {
 }
 
 .languages {
-  font-family: 'Poppins';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 24px;
-/* identical to box height, or 120% */
-
-display: flex;
-align-items: center;
-
-color: #000000;
-text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #000;
+  text-decoration: none;
 }
-
