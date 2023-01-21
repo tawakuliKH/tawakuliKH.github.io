@@ -74,13 +74,14 @@ header {
   color: #344563;
 }
 
-.connect {
+.connect a {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 24px;
   color: #7f8cff;
+  text-decoration: none;
 }
 
 .social {
@@ -389,20 +390,29 @@ header {
 .skills {
   display: flex;
   align-items: center;
+  margin-top: 30px;
 }
 
-.main-nav {
-  display: -webkit-flex;
-  display: flex;
-  flex-direction: column;
+.skills li {
+  text-decoration: none;
   list-style-type: none;
+  align-items: center;
 }
 
 .first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-bottom: 20px;
+}
+
+.lang {
+  margin-bottom: 15px;
+  width: 303px;
+}
+
+.icons {
+  margin-top: 20px;
+  width: 303px;
 }
 
 .languages {
@@ -415,4 +425,7 @@ header {
   align-items: center;
   color: #000;
   text-decoration: none;
+  margin-bottom: 20px;
+  margin-bottom: 1px;
+  width: 66px;
 }
