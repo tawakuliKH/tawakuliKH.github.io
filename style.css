@@ -196,7 +196,7 @@ header {
   justify-content: space-between;
   align-items: center;
   width: 236px;
-  height: 32px
+  height: 32px;
 }
 
 .name {
@@ -219,8 +219,6 @@ header {
   flex: none;
   border-radius: 100%;
 }
-
-
 
 .text {
   font-family: 'Poppins', sans-serif;
@@ -317,7 +315,6 @@ header {
 
 .about-elements {
   padding: 114px 20px;
-
 }
 
 .myself {
@@ -427,7 +424,6 @@ header {
   background: #6070ff;
   border-top-left-radius: 90px;
   background-image: url("assets/contact\ form\ shapes-mobile@2x.png");
-
 }
 
 .contact-me {
