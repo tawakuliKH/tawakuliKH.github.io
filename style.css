@@ -8,8 +8,13 @@
 }
 
 body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
   min-height: 100vh;
   background-color: #e5e5e5;
+  align-content: center;
+  justify-content: center;
 }
 
 .header {
@@ -188,23 +193,10 @@ header {
 .frame {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-  gap: 12px;
   width: 236px;
   height: 32px;
-  flex: none;
-  flex-grow: 0;
-}
-
-.client {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px;
-  width: 55px;
-  height: 32px;
-  flex: none;
-  flex-grow: 0;
 }
 
 .name {
@@ -226,16 +218,6 @@ header {
   background: #c1c7d0;
   flex: none;
   border-radius: 100%;
-}
-
-.role {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding: 8px;
-  width: 88px;
-  height: 32px;
-  flex: none;
 }
 
 .text {
@@ -326,10 +308,13 @@ header {
 .about {
   display: flex;
   flex-direction: column;
-  padding: 114px 20px;
   background-color: #fff;
   width: 375px;
   border-top-right-radius: 70px;
+}
+
+.about-elements {
+  padding: 114px 20px;
 }
 
 .myself {
@@ -428,4 +413,90 @@ header {
   margin-bottom: 20px;
   margin-bottom: 1px;
   width: 66px;
+}
+
+.contact-form {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 375px;
+  margin: 0;
+  background: #6070ff;
+  border-top-left-radius: 90px;
+  background-image: url("assets/contact\ form\ shapes-mobile@2x.png");
+}
+
+.contact-me {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 52px;
+  color: #fff;
+  margin-top: 90px;
+}
+
+.contact-desc {
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  text-align: center;
+  color: #ebebff;
+}
+
+.descritption {
+  width: 327px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 47px;
+  margin-bottom: 20px;
+}
+
+.message {
+  background: #fff;
+  border: 1px solid #cfd8dc;
+  border-radius: 8px;
+  width: 327px;
+  height: 170px;
+  margin-bottom: 20px;
+}
+
+.touch {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  align-self: start;
+}
+
+.submit {
+  width: 142px;
+  height: 48px;
+  background: #fff;
+  border-radius: 8px;
+  letter-spacing: 0.03em;
+  color: #6070ff;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 24px;
+  margin-bottom: 30px;
+}
+
+.submit:hover {
+  background: #fff;
+  color: black;
 }
