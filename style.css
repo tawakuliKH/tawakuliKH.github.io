@@ -9,7 +9,7 @@
 
 body {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   min-height: 100vh;
   background-color: #e5e5e5;
@@ -22,6 +22,10 @@ body {
   justify-content: space-between;
   align-items: center;
   background-color: #fff;
+}
+
+.nav-list {
+  display: none;
 }
 
 .logo {
@@ -42,10 +46,6 @@ body {
 .vector img {
   width: 24px;
   height: 24px;
-}
-
-header {
-  width: 375px;
 }
 
 .main {
@@ -112,10 +112,6 @@ header {
   align-items: center;
   padding: 114px 24px;
   gap: 88px;
-  position: absolute;
-  width: 375px;
-  height: 2788px;
-  top: 718px;
 }
 
 .works {
@@ -130,46 +126,19 @@ header {
   background: #fff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  flex: none;
-  flex-grow: 0;
 }
 
 .snapshot {
   width: 295px;
   height: 220px;
-  background: url(blog_drbl_4x.png);
   border-radius: 8px;
   flex: none;
   flex-grow: 0;
-  background-image: url('assets/Snapshoot\ Portfolio.png');
 }
 
-.snapshot-2 {
-  width: 295px;
-  height: 220px;
-  border-radius: 8px;
-  flex: none;
-  flex-grow: 0;
-  background-image: url('assets/Snapshoot\ Portfolio-2.png');
-}
-
-.snapshot-3 {
-  width: 295px;
-  height: 220px;
-  border-radius: 8px;
-  flex: none;
-  flex-grow: 0;
-  background-image: url('assets/Snapshoot\ Portfolio-3.png');
-}
-
-.snapshot-4 {
-  width: 295px;
-  height: 220px;
-  background: url(blog_drbl_4x.png);
-  border-radius: 8px;
-  flex: none;
-  flex-grow: 0;
-  background-image: url('assets/Snapshoot\ Portfolio-4.png');
+.snapshot img {
+  width: 100%;
+  height: 100%;
 }
 
 .info {
@@ -333,7 +302,7 @@ header {
   flex-grow: 0;
 }
 
-.conent {
+.content {
   width: 327px;
   height: 144px;
   font-family: 'Poppins', sans-serif;
@@ -374,30 +343,60 @@ header {
 
 .skills {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   margin-top: 30px;
 }
 
 .skills li {
   text-decoration: none;
   list-style-type: none;
-  align-items: center;
+  align-items: flex-start;
 }
 
 .first {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  padding-left: 5px;
+  width: 303px;
+  height: 67px;
+  background-color: #f7f7f9;
 }
 
 .lang {
-  margin-bottom: 15px;
   width: 303px;
+}
+
+.techs {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.tech-name {
+  margin-left: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #253858;
 }
 
 .icons {
   margin-top: 20px;
   width: 303px;
+}
+
+.last {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
 }
 
 .languages {
@@ -463,6 +462,7 @@ header {
   width: 327px;
   height: 47px;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 .message {
@@ -472,6 +472,7 @@ header {
   width: 327px;
   height: 170px;
   margin-bottom: 20px;
+  padding: 10px 10px;
 }
 
 .touch {
@@ -499,4 +500,144 @@ header {
 .submit:hover {
   background: #fff;
   color: black;
+}
+
+@media (min-width: 764px) {
+  .vector {
+    display: none;
+  }
+
+  .main {
+    width: 98.9vw;
+    background-image: url('assets/desktop\ files/header.png');
+    padding: 200px 24px;
+    height: 800px;
+  }
+
+  .logo {
+    padding: 10px 12px;
+    margin-left: 143px;
+  }
+
+  .nav-list {
+    display: flex;
+    justify-content: space-between;
+    margin-right: 143px;
+    align-items: flex-start;
+  }
+
+  .nav-list li {
+    list-style-type: none;
+    padding: 10px 12px;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 20px;
+    color: #344563;
+  }
+
+  .texts {
+    margin-left: 15%;
+    width: 60%;
+  }
+
+  .container {
+    width: 96%;
+  }
+
+  .works {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 496px;
+    padding: 24px;
+  }
+
+  .snapshot {
+    width: 46%;
+    height: 448px;
+  }
+
+  .snapshot img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .info {
+    padding: 24px;
+    width: 48%;
+    height: 448px;
+  }
+
+  .desc {
+    width: 100%;
+  }
+
+  .projects {
+    flex-direction: row-reverse;
+  }
+
+  .about {
+    display: flex;
+    flex-direction: column;
+    width: 98.9vw;
+    justify-content: center;
+    border: 1px solid gray;
+  }
+
+  .about-elements {
+    display: flex;
+  }
+
+  .first-element {
+    width: 35%;
+    margin-left: 10%;
+    margin-right: 20px;
+  }
+
+  .skills {
+    width: 50%;
+  }
+
+  .content {
+    width: 100%;
+    height: 200px;
+  }
+
+  .technology-list {
+    width: 100%;
+  }
+
+  .line {
+    width: 100%;
+  }
+
+  .techs {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 120px;
+    height: 100%;
+  }
+
+  .tech-name {
+    margin-left: 1px;
+  }
+
+  .contact-form {
+    width: 98.9vw;
+    background-image: url("assets/desktop\ files/contact form-back.png");
+    background-repeat: no-repeat;
+  }
+
+  .touch {
+    align-self: center;
+  }
 }
