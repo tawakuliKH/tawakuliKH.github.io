@@ -266,6 +266,13 @@ body {
   font-size: 17px;
   line-height: 24px;
   color: #396df2;
+  transition: all 1s;
+}
+
+.btn-action:hover {
+  color: #fff;
+  background-color: black;
+  transform: translateY(4px);
 }
 
 .about {
