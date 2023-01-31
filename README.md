@@ -96,7 +96,7 @@ Describing my bio, my skills and my backround.
 
 <!-- LIVE DEMO -->
 
-## 🚀 Live Demo <a name="live-demo"></a>
+## 🚀 Live Demo <a href="https://tawakulikh.github.io/" name="live-demo"></a>
 
 
 - [Live Demo Link](https://yourdeployedapplicationlink.com)
