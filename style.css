@@ -48,6 +48,39 @@ body {
   height: 24px;
 }
 
+.nav-mobile {
+  width: 100%;
+  height: 100vh;
+  background-color: #6070FF;
+  position: fixed;
+  z-index: 1;
+  top: 0px;
+  left: 0px;
+  mix-blend-mode: multiply;
+
+}
+
+.navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  text-decoration: none;
+}
+.menu-mobile {
+  font-family: 'Poppins';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.cross-btn {
+  position: absolute;
+  right: 10px;
+  top: 15px;
+}
+
 .main {
   display: flex;
   background-image: url("assets/header-shapes\ mobile.png");
