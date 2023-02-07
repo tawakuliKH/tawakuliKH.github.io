@@ -49,24 +49,27 @@ body {
 }
 
 .nav-mobile {
-  width: 100%;
+  width: 375px;
   height: 100vh;
   background-color: #6070FF;
   position: fixed;
   z-index: 1;
-  top: 0px;
-  left: 0px;
+  top: 7px;
   mix-blend-mode: multiply;
-
+  display: none;
 }
 
 .navbar-mobile {
   display: flex;
   flex-direction: column;
-  list-style-type: none;
-  text-decoration: none;
+  gap: 15px;
+  list-style: none;
+  position: absolute;
+  top: 48px;
 }
+
 .menu-mobile {
+  text-decoration: none;
   font-family: 'Poppins';
   font-style: normal;
   font-weight: 600;
@@ -77,8 +80,10 @@ body {
 
 .cross-btn {
   position: absolute;
-  right: 10px;
-  top: 15px;
+  right: 17px;
+  top: 16px;
+  width: 14px;
+  height: 14px;
 }
 
 .main {
