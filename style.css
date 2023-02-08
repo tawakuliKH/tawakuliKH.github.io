@@ -63,6 +63,8 @@ body {
   top: 5px;
   display: none;
   mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
 }
 
 .navbar-mobile {
