@@ -20,8 +20,15 @@ body {
 .header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
   background-color: #fff;
+}
+
+.head {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  border-radius: 20px;
 }
 
 .nav-list {
@@ -46,6 +53,45 @@ body {
 .vector img {
   width: 24px;
   height: 24px;
+}
+
+.nav-mobile {
+  width: 375px;
+  height: 100vh;
+  background-color: #6070ff;
+  position: fixed;
+  top: 5px;
+  display: none;
+  mix-blend-mode: multiply;
+  backdrop-filter: blur(10px);
+  overflow: hidden;
+}
+
+.navbar-mobile {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  list-style: none;
+  position: absolute;
+  top: 48px;
+}
+
+.menu-mobile {
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff;
+}
+
+.cross-btn {
+  position: absolute;
+  right: 17px;
+  top: 16px;
+  width: 14px;
+  height: 14px;
 }
 
 .main {
@@ -511,7 +557,7 @@ body {
   color: black;
 }
 
-@media (min-width: 764px) and (max-width: 1440px) {
+@media (min-width: 764px) {
   .vector {
     display: none;
   }
@@ -537,6 +583,9 @@ body {
 
   .nav-list li {
     list-style-type: none;
+  }
+
+  .nav-list li a {
     padding: 10px 12px;
     font-family: 'Poppins', sans-serif;
     font-style: normal;
@@ -544,6 +593,11 @@ body {
     font-size: 15px;
     line-height: 20px;
     color: #344563;
+    text-decoration: none;
+  }
+
+  .active {
+    border-bottom: 1px solid gray;
   }
 
   .texts {
