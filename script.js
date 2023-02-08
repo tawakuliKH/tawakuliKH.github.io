@@ -37,3 +37,187 @@ arr = Array.from(menu);
 for (let i = 0; i < arr.length; i += 1) {
   arr[i].addEventListener('click', menuClick);
 }
+
+const projects = [
+  {
+    image: 'assets/desktop files/snapshot-1.png',
+    popUpImage: 'assets/popup/popup1.png',
+    popUpDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    class: '',
+    title: 'Tonic',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    roleYear: '2015',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techs: ['html', 'css', 'javascript', 'Github', 'Ruby', 'Bootstrap'],
+  },
+  {
+    image: 'assets/desktop files/snapshot-2.png',
+    popUpImage: 'assets/popup/popup2.png',
+    popUpDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    class: 'projects',
+    title: 'Multi-Post Stories',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    roleYear: '2015',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techs: ['html', 'css', 'javascript', 'Github', 'Ruby', 'Bootstrap'],
+  },
+  {
+    image: 'assets/desktop files/snapshot-3.png',
+    popUpImage: 'assets/popup/popup3.png',
+    popUpDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    class: '',
+    title: 'Tonic',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    roleYear: '2015',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techs: ['html', 'css', 'javascript', 'Github', 'Ruby', 'Bootstrap'],
+  },
+  {
+    image: 'assets/desktop files/snapshot-4.png',
+    popUpImage: 'assets/popup/popup4.png',
+    popUpDesc: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    class: 'projects',
+    title: 'Multi Post-Stories',
+    client: 'CANOPY',
+    role: 'Back End Dev',
+    roleYear: '2015',
+    desc: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    techs: ['html', 'css', 'javascript', 'Github', 'Ruby', 'Bootstrap'],
+  },
+];
+
+const projectSection = document.getElementById('work');
+
+projects.forEach((item) => {
+  projectSection.innerHTML += ` 
+  <section class="works ${item.class}" id="works">
+            <div class="snapshot"><img src="${item.image}" alt="Project Screenshot" class="image-project"> </div>
+            <div class="info">
+                <div class="title">${item.title}</div>
+                <div class="frame">
+                    <div class="client">
+                        <div class="name">
+                        ${item.client}
+                        </div>
+                    </div>
+                    <div class="counter"></div>
+
+                    <div class="role">
+                        <div class="text role-name">${item.role}</div>
+                    </div>
+                    <div class="counter"></div>
+
+                    <div class="role">
+                        <div class="text role-year">${item.roleYear}</div>
+                    </div>
+                </div>
+
+                <div class="desc">
+                ${item.desc}
+                    </div>
+
+                <div class="tags">
+                    <div>
+                        <li class="tag"><a href="" class="html">${item.techs[0]}</a></li>
+                    </div>
+                    <div>
+                        <li class="tag"><a href="" class="css">${item.techs[1]}</a></li>
+                    </div>
+                    <div>
+                        <li class="tag"><a href="" class="javascript">${item.techs[2]}</a></li>
+                    </div>
+                </div>
+                <div class="action btn">
+                    <button class="btn-action see-project">See Project</button>
+                </div>
+            </div>
+        </section>
+  `;
+});
+
+const projectPopUp = document.getElementById('pops');
+projects.forEach((item) => {
+  projectPopUp.innerHTML += `
+  <div class="popUp" id="popUp">
+  <div class="popUp-content">
+      <div class="heading-popup">
+          <div class="title">${item.title}</div>
+          <div class="cross-black">
+              <img src="assets/cross-black.png" alt="Cross btn" class="cross">
+          </div>
+      </div>
+      <div class="frame">
+          <div class="client">
+              <div class="name">
+              ${item.client}
+              </div>
+          </div>
+          <div class="counter"></div>
+
+          <div class="role">
+              <div class="text role-name"> ${item.role}</div>
+          </div>
+          <div class="counter"></div>
+
+          <div class="role">
+              <div class="text role-year">${item.roleYear}</div>
+          </div>
+      </div>
+      <div>
+          <img class="image-popup" src="${item.popUpImage}" alt="">
+      </div>
+      <div class="popUp-description">
+          <div class="popUp-desc">
+          ${item.popUpDesc}
+          </div>
+
+          <div class="technologies">
+              <div class="tags">
+                  <div>
+                      <li class="tag"><a href="#" class="html">${item.techs[0]}</a></li>
+                  </div>
+                  <div>
+                      <li class="tag"><a href="#" class="css">${item.techs[1]}</a></li>
+                  </div>
+                  <div>
+                      <li class="tag"><a href="#" class="javascript">${item.techs[2]}</a></li>
+                  </div>
+              </div>
+              <div class="tags">
+                  <div>
+                      <li class="tag"><a href="#" class="github">${item.techs[3]}</a></li>
+                  </div>
+                  <div>
+                      <li class="tag"><a href="#" class="ruby">${item.techs[4]}</a></li>
+                  </div>
+                  <div>
+                      <li class="tag"><a href="#" class="bootstrap">${item.techs[5]}</a></li>
+                  </div>
+              </div>
+              <div class="popUp-buttons">
+                  <div class="seelive"><a href="#"><img src="assets/popup/see live.png" alt=""></a></div>
+                  <div class="seelive"><a href="#"><img src="assets/popup/Enabled.png" alt=""></a></div>
+              </div>
+          </div>
+        
+      </div>
+  </div>
+</div>`;
+});
+
+const btnProject = Array.from(document.querySelectorAll('.btn-action'));
+const crossBlack = Array.from(document.querySelectorAll('.cross-black'));
+const popUp = Array.from(document.querySelectorAll('.popUp'));
+
+for (let i = 0; i < projects.length; i += 1) {
+  btnProject[i].addEventListener('click', () => {
+    popUp[i].style.display = 'block';
+  });
+
+  crossBlack[i].addEventListener('click', () => {
+    popUp[i].style.display = 'none';
+  });
+}
