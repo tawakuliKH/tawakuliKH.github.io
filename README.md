@@ -133,20 +133,19 @@ git clone git@github.com:tawakuliKH/portofolio.git
 
 Install this project with:
 
-git@github.com:tawakuliKH/portofolio.git
+
 
 
 ### Usage
 
 To run the project, execute the following command:
 
-git@github.com:tawakuliKH/portofolio.git
+
 
 ### Run tests
 
 To run tests, run the following command:
 
-git@github.com:tawakuliKH/portofolio.git
 
 ### Deployment
 
