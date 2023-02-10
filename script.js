@@ -303,3 +303,13 @@ document.getElementById('message').addEventListener('keyup', () => {
   localStorage.setItem('contactDetails', JSON.stringify(storageValues));
 });
 
+const finalStorage = JSON.parse(localStorage.getItem('contactDetails'));
+function useStorage() {
+  document.getElementById('user').value = finalStorage.user;
+  document.getElementById('email').value = finalStorage.email;
+  document.getElementById('message').value = finalStorage.message;
+}
+
+if (localStorage.getItem('contactDetails')) {
+  useStorage();
+}
