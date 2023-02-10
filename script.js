@@ -282,26 +282,18 @@ const storageValues = {
   message: '',
 };
 
-document.getElementById('user').addEventListener('keyup', () => {
+function updateStorage() {
   storageValues.user = document.getElementById('user').value;
   storageValues.email = document.getElementById('email').value;
   storageValues.message = document.getElementById('message').value;
   localStorage.setItem('contactDetails', JSON.stringify(storageValues));
-});
+}
 
-document.getElementById('email').addEventListener('keyup', () => {
-  storageValues.user = document.getElementById('user').value;
-  storageValues.email = document.getElementById('email').value;
-  storageValues.message = document.getElementById('message').value;
-  localStorage.setItem('contactDetails', JSON.stringify(storageValues));
-});
+document.getElementById('user').addEventListener('keyup', updateStorage);
 
-document.getElementById('message').addEventListener('keyup', () => {
-  storageValues.user = document.getElementById('user').value;
-  storageValues.email = document.getElementById('email').value;
-  storageValues.message = document.getElementById('message').value;
-  localStorage.setItem('contactDetails', JSON.stringify(storageValues));
-});
+document.getElementById('email').addEventListener('keyup', updateStorage);
+
+document.getElementById('message').addEventListener('keyup', updateStorage);
 
 const finalStorage = JSON.parse(localStorage.getItem('contactDetails'));
 function useStorage() {
