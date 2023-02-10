@@ -222,6 +222,8 @@ for (let i = 0; i < projects.length; i += 1) {
   });
 }
 
+// Form Validation
+
 function showMessage(input, message, type) {
   const msg = input.parentNode.querySelector('small');
   msg.innerText = message;
