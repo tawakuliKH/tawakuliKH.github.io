@@ -274,3 +274,34 @@ form.addEventListener('submit', (event) => {
     event.preventDefault();
   }
 });
+
+// Local Storage Practice
+const storageValues = {
+  user: '',
+  email: '',
+  message: '',
+};
+
+function updateStorage() {
+  storageValues.user = document.getElementById('user').value;
+  storageValues.email = document.getElementById('email').value;
+  storageValues.message = document.getElementById('message').value;
+  localStorage.setItem('contactDetails', JSON.stringify(storageValues));
+}
+
+document.getElementById('user').addEventListener('keyup', updateStorage);
+
+document.getElementById('email').addEventListener('keyup', updateStorage);
+
+document.getElementById('message').addEventListener('keyup', updateStorage);
+
+const finalStorage = JSON.parse(localStorage.getItem('contactDetails'));
+function useStorage() {
+  document.getElementById('user').value = finalStorage.user;
+  document.getElementById('email').value = finalStorage.email;
+  document.getElementById('message').value = finalStorage.message;
+}
+
+if (localStorage.getItem('contactDetails')) {
+  useStorage();
+}
