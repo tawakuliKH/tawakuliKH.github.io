@@ -221,3 +221,56 @@ for (let i = 0; i < projects.length; i += 1) {
     popUp[i].style.display = 'none';
   });
 }
+
+// Form Validation
+
+function showMessage(input, message, type) {
+  const msg = input.parentNode.querySelector('small');
+  msg.innerText = message;
+  input.className = type ? 'success' : 'error';
+  return type;
+}
+
+function showError(input, message) {
+  return showMessage(input, message, false);
+}
+
+function showSuccess(input) {
+  return showMessage(input, '', true);
+}
+
+function hasValue(input, message) {
+  if (input.value.trim() === '') {
+    return showError(input, message);
+  }
+  return showSuccess(input);
+}
+
+function validateEmail(input, requiredMsg, invalidMsg) {
+  if (!hasValue(input, requiredMsg)) {
+    return false;
+  }
+  // validate email format
+  const emailRegex = /^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9-]+(\.[a-z0-9-]+)*(\.[a-z]{2,4})$/;
+  const email = input.value.trim();
+  if (!emailRegex.test(email)) {
+    return showError(input, invalidMsg);
+  }
+  return true;
+}
+
+const form = document.querySelector('#contact');
+
+const NAME_REQUIRED = 'Please enter your Name';
+const EMAIL_REQUIRED = 'Please enter your Email';
+const MESSAGE_REQUIRED = 'Please enter your Message';
+const EMAIL_INVALID = 'Please enter a correct email address format';
+
+form.addEventListener('submit', (event) => {
+  const nameValid = hasValue(document.getElementById('user'), NAME_REQUIRED);
+  const messageValid = hasValue(document.getElementById('message'), MESSAGE_REQUIRED);
+  const emailValid = validateEmail(document.getElementById('email'), EMAIL_REQUIRED, EMAIL_INVALID);
+  if (!nameValid || !emailValid || !messageValid) {
+    event.preventDefault();
+  }
+});

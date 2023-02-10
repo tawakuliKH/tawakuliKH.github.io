@@ -138,18 +138,27 @@
                 </div>
 
             </div>
-            <div class="contact-form" id="contact">
+            <div class="contact-form" >
                 <div class="contact-me">Contact me</div>
                 <div class="descritption">
                     <p class="contact-desc">If you have an application you are interested in developing, a feature that
                         you need built or a project that needs coding. I’d love to help with it </p>
                 </div>
-                <form action="https://formspree.io/f/xknagddk" method="post" class="form">
-                    <input type="text" id="user" class="input" placeholder="Full name" maxlength="100" required />
-                    <input type="email" id="email" class="input" placeholder="Email" maxlength="100" required />
-                    <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Message"
-                        maxlength="500" required></textarea>
-                    <div class="touch">
+                <form action="https://formspree.io/f/xknagddk" method="post" class="form" id="contact">
+                    <div class="field">
+                        <input type="text" name="name" id="user" class="input" placeholder="Full name" maxlength="100"/>
+                        <small id="small"></small>
+                    </div>
+                    <div class="field">
+                        <input type="text" name="email" id="email" class="input" placeholder="Email" maxlength="100"  />
+                        <small id="small"></small>
+                    </div>
+                    <div class="field">
+                        <textarea name="message" id="message" cols="30" rows="10" class="message" placeholder="Message"
+                        maxlength="500"></textarea>
+                        <small id="small"></small>
+                    </div>
+                    <div class="touch field">
                         <button type="submit" class="submit"> Get in touch </button>
                     </div>
                 </form>
