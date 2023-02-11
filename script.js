@@ -293,7 +293,7 @@ document.getElementById('user').addEventListener('keyup', updateStorage);
 
 document.getElementById('email').addEventListener('keyup', updateStorage);
 
-document.getElementById('message').addEventListener('keyup', updateStorage);
+document.getElementById('message').addEventListener('keyup', '');
 
 const finalStorage = JSON.parse(localStorage.getItem('contactDetails'));
 function useStorage() {
