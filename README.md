@@ -1,70 +1,259 @@
-# Getting Started with Create React App
+<a name="readme-top"></a>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- TABLE OF CONTENTS -->
 
-## Available Scripts
+# 📗 Table of Contents
 
-In the project directory, you can run:
+- [📖 About the Project](#about-project)
+  - [🛠 Built With](#built-with)
+    - [Tech Stack](#tech-stack)
+    - [Key Features](#key-features)
+  - [🚀 Live Demo](#live-demo)
+- [💻 Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Setup](#setup)
+  - [Install](#install)
+  - [Usage](#usage)
+  - [Deployment](#deployment)
+- [👥 Authors](#authors)
+- [🔭 Future Features](#future-features)
+- [🤝 Contributing](#contributing)
+- [⭐️ Show your support](#support)
+- [🙏 Acknowledgements](#acknowledgements)
+- [📝 License](#license)
 
-### `npm start`
+<!-- PROJECT DESCRIPTION -->
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+# 📖 Khadim Tawakuli — Professional Portfolio <a name="about-project"></a>
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+**Khadim Tawakuli's Professional Portfolio** is a modern, responsive single-page React application showcasing my work as a Full-Stack Developer and AI Researcher. The portfolio highlights my experience, education, skills, projects, and recommendations in a visually stunning dark-themed interface with glass-morphism effects.
 
-### `npm test`
+This portfolio serves as a central hub for potential employers, collaborators, and researchers to learn about my background in **Software Engineering**, **Artificial Intelligence**, and **Full-Stack Development**.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠 Built With <a name="built-with"></a>
 
-### `npm run build`
+### Tech Stack <a name="tech-stack"></a>
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<details>
+  <summary>Client / Front-End</summary>
+  <ul>
+    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS">CSS3</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/HTML">HTML5</a></li>
+    <li><a href="https://fonts.google.com/">Google Fonts (Inter)</a></li>
+    <li><a href="https://fontawesome.com/">Font Awesome Icons</a></li>
+  </ul>
+</details>
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+<details>
+  <summary>Server / Back-End</summary>
+  <ul>
+    <li>None (Static Single-Page Application)</li>
+  </ul>
+</details>
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+<details>
+<summary>Database</summary>
+  <ul>
+    <li>None (No database required)</li>
+  </ul>
+</details>
 
-### `npm run eject`
+<!-- Features -->
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Key Features <a name="key-features"></a>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Responsive Design** — Fully optimized for mobile, tablet, and desktop devices
+- **Dark Theme** — Modern dark UI with glass-morphism cards and gradient accents
+- **Smooth Animations** — Scroll-triggered reveal animations for enhanced user experience
+- **Interactive Navigation** — Fixed navbar with mobile hamburger menu and smooth scrolling
+- **Comprehensive Sections**:
+  - Hero with profile photo, stats, and call-to-action buttons
+  - About Me with education and research highlights
+  - Work Experience timeline (3 positions)
+  - Education & Training timeline (4 entries)
+  - Skills & Technologies with categorized grids (Technical, AI/ML, Languages)
+  - Featured Projects (4 projects including Master's Thesis)
+  - Honors & Awards (4 recognitions)
+  - Recommendations/References (4 professional references)
+  - Footer with contact details and social links
+- **Performance Optimized** — Lightweight, no external dependencies except CDN fonts/icons
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+<!-- LIVE DEMO -->
 
-## Learn More
+## 🚀 Live Demo <a name="live-demo"></a>
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **Live Demo:** [https://tawakulikh.github.io/](https://tawakulikh.github.io/)
+- **GitHub Repository:** [https://github.com/tawakuliKH/tawakuliKH](https://github.com/tawakuliKH/tawakuliKH)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Code Splitting
+<!-- GETTING STARTED -->
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 💻 Getting Started <a name="getting-started"></a>
 
-### Analyzing the Bundle Size
+To get a local copy of this portfolio up and running on your machine, follow these steps.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Prerequisites
 
-### Making a Progressive Web App
+Before you begin, ensure you have the following installed:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+- **Node.js** (v14 or higher) — [Download here](https://nodejs.org/)
+- **npm** (comes with Node.js) or **yarn**
+- **Git** — [Download here](https://git-scm.com/)
 
-### Advanced Configuration
+### Setup
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Clone this repository to your desired folder:
+
+```sh
+git clone https://github.com/tawakuliKH/tawakuliKH.git
+cd tawakuliKH
+```
+
+### Install
+
+Install the project dependencies:
+
+```sh
+npm install
+# or
+yarn install
+```
+
+### Usage
+
+To run the project in development mode:
+
+```sh
+npm start
+# or
+yarn start
+```
+
+This will open the portfolio at `http://localhost:3000` in your browser. The page will automatically reload if you make edits.
 
 ### Deployment
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+To build the project for production deployment:
 
-### `npm run build` fails to minify
+```sh
+npm run build
+# or
+yarn build
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+This creates a `build` folder with optimized production files.
+
+**Deploy to GitHub Pages:**
+
+```sh
+npm run deploy
+# or
+yarn deploy
+```
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- AUTHORS -->
+
+## 👥 Authors <a name="authors"></a>
+
+👤 **Khadim (Morteza) Tawakuli**
+
+- **GitHub:** [@tawakuliKH](https://github.com/tawakuliKH)
+- **LinkedIn:** [Mortez Tawakuli](https://www.linkedin.com/in/mortez-tawakuli-0904818170)
+- **Twitter:** [@KhadimTawakuli](https://twitter.com/KhadimTawakuli)
+- **Email:** tawakuli456@gmail.com
+- **WhatsApp:** [+93 765 074 686](https://wa.me/93765074686)
+
+### Education
+- **M.Sc. Artificial Intelligence & Soft Computing** — Yazd University, Iran (2023–2026)
+- **B.Sc. Computer Science — Software Engineering** — Kabul University, Afghanistan (2016–2019)
+- **Full-Stack Development** — Microverse (2023)
+- **TOEFL iBT** — Score 105/120 (2024)
+
+### Research Focus
+- Computer Vision (CNNs) for Diabetic Retinopathy Detection
+- Medical Image Analysis
+- Machine Learning & Deep Learning
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FUTURE FEATURES -->
+
+## 🔭 Future Features <a name="future-features"></a>
+
+Planned enhancements for the portfolio:
+
+- **Blog Section** — Share articles about AI research and development
+- **Dark/Light Theme Toggle** — Allow users to switch between themes
+- **Multilingual Support** — Add Persian and Pashto language options
+- **Interactive AI Demo** — Live demo of diabetic retinopathy detection model
+- **Downloadable CV** — One-click PDF download of my resume
+- **Project Filtering** — Filter projects by category (AI, Web, Research)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- CONTRIBUTING -->
+
+## 🤝 Contributing <a name="contributing"></a>
+
+Contributions, issues, and feature requests are welcome!
+
+If you have suggestions for improving this portfolio, feel free to:
+
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+Feel free to check the [issues page](https://github.com/tawakuliKH/tawakuliKH/issues).
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- SUPPORT -->
+
+## ⭐️ Show your support <a name="support"></a>
+
+If you find this portfolio helpful or inspiring, please consider giving it a ⭐️ star on GitHub!
+
+Your support motivates me to continue building and sharing my work with the community.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
+
+## 🙏 Acknowledgments <a name="acknowledgements"></a>
+
+I would like to thank the following people and organizations for their support:
+
+- **Microverse** — For the intensive full-stack development program and global community
+- **Yazd University** — For the Master's program in Artificial Intelligence & Soft Computing
+- **Kabul University** — For the Bachelor's degree in Software Engineering
+- **Dr. Jamal Zarepour** — My supervisor at Yazd University for guidance on AI research
+- **Dr. Elham Hereftah Abbasi** — My advisor at Yazd University
+- **Michelle Pelayo** — HR Manager at Westex Medical Services
+- **Dr. Mohammad Ishaq Zwan** — CEO of Zwan Curative Hospital
+- **All my colleagues and teammates** who have inspired and supported my journey
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- LICENSE -->
+
+## 📝 License <a name="license"></a>
+
+This project is [MIT](./LICENSE) licensed.
+
+**Copyright © 2026 Khadim Tawakuli**
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
